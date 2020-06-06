@@ -1,13 +1,13 @@
-package com.library;
+package com.digilytics.registration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LibraryApplication {
+public class RegistrationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LibraryApplication.class, args);
+		SpringApplication.run(RegistrationApplication.class, args);
 	}
 
 }

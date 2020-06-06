@@ -1,4 +1,4 @@
-package com.library.model;
+package com.digilytics.registration.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,35 +7,25 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name="role")
+public class Role {
 
 	@Id
-	@Column(name = "user_id", nullable = false)
+	@Column(name = "id", nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id;
-
-	@Column(name = "name")
+	private int id;
+	
 	private String name;
 
-	@Column(name = "borrowed_qty")
-	private int borrowedQty;
 
 	public int getId() {
-		return Id;
-	}
-
-	public int getBorrowedQty() {
-		return borrowedQty;
-	}
-
-	public void setBorrowedQty(int borrowedQty) {
-		this.borrowedQty = borrowedQty;
+		return id;
 	}
 
 	public void setId(int id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getName() {
@@ -45,4 +35,5 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 }
